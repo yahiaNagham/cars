@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Toyota Yaris 2016</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="styleSelling-listing.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mouse+Memoirs&family=Poppins:wght@300;400;500;600&family=Questrial&family=Tilt+Warp:XROT,YROT@5,1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    width:150px; 
+    height:60px;
+    border:3px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color:rgb(211, 3, 3); 
+    margin-left: 5px;
+}
+ul{
+  list-style:none; /*bah mtjich la lise mr9ma " Remove HTML bullets" */
+  background: rgb(223, 13, 13);
+  border-radius: 15px;
+  
+}
+ul li {
+    display: inline-block;/*bah tji godam b3dha*/
+    position: relative;
+    width:10em ;
+}
+ul li a{
+    display:block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+    padding:10px 20px;
+    color: #fff;
+    text-decoration: none;/*bah myjiwch les liens mstrin*/ 
+    text-align: center;
+    font-size: 15px;
+}
+ul li ul.menu{
+    display: block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+ul li ul.menu{
+    width: 170px;
+    background: rgb(209, 5, 5) ;
+    position: absolute;  /* bah yjiw f nafs star godam b3dhoum*/
+    z-index:999 ; /*bah tjina liste ta3 dash w para*/
+    display: none;/*bah ki ntka 3liha tjini ta3 dash w para ta7t b3dhoum psq koun n7itha tb9a kyna*/
+}
+ul li a:hover{
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+ul li:hover ul.menu{
+    display: block; /*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+.login {
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+.login:hover{
+    background: rgb(209, 5, 5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+section {
+     display: flex;/*bah nrj3 form w img godam b3dhoum*/
+ }
+.cont{ /*bah yjiw gdam b3dhoum*/
+    margin-top: 20px;
+    display: block;
+    width:360px;
+    margin-left: 120px;
+    height: 500px;
+    border: 1px solid;
+    border-radius: 50px;
+    
+
+}
+.cont p{
+  font-style: oblique;
+}
+.cont strong{
+    margin-left: 6px; 
+}
+
+div{
+    display: flex;
+    
+}
+div img {
+    width: 300PX;
+    height: 280PX;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+h2{
+    margin-left: 100px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-style: oblique;
+}
+p{
+    margin-left: 50px;
+}
+.h1{
+    position: absolute;/*ta9dr t7rkaha kima thb*/
+    top: 430px;
+    left: 68px;
+}
+
+.desc{
+    display: flex;  
+}
+.h2{
+position: absolute;
+    top: 500px;
+}
+.pargh{
+    position: absolute;
+    top: 570px;
+}
+.pargh span{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    padding-bottom: 100px;
+}
+.price {
+    color: rgb(209, 5, 5);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+    <img class="logo" src="logo.jpg" >
+  
+    <ul>
+  <li> <a href="home.html"><i class="fa fa-home"></i> <span> Home</span></a></li>
+  <li> <a href="cars.html"><i class="fa fa-car"></i> Cars</a></li>
+  <li> <a href="reviews.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span> Reviews</span></a></li> 
+  <li> <a href="aboutus.html"><i class="fa fa-users" aria-hidden="true"></i><span> About Us</span></a></li>
+  <li> <a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i>  Contact Us</a></li>
+  <li><a href="sell.html"><i class="fa fa-cart-plus" aria-hidden="true"></i>  Sell</a></li>
+             
+  <li> <a href="#">Plus<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+     <ul class="menu">
+  
+          
+            <li><a href="myprofil.html"><i class="fa fa-user" aria-hidden="true"></i><span>  My profile</span></a></li>
+            <li><a href="bookmarks.html"><i class="fa fa-bookmark" aria-hidden="true"></i><span>  Bookmarks</span></a></li>
+            <li><a href="favorite.html"><i class="fa fa-heart" aria-hidden="true"></i><span>  Favorite</span></a></li>
+            <li><a href="langue.html"><i class="fa fa-language" aria-hidden="true"></i><span> Language</span></a></li>
+            <li><a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i><span> LogOut</span></a></li>
+     </ul> 
+  </li>
+  <li><a class="login" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span>  Login</span></a></li>
+  </ul>
+
+
+   <section>
+
+       <div>
+           
+         <img src="Toyota Yaris 201601.jpg" alt="">
+         <img src="Toyota Yaris 201602.jpg" alt="">
+         <img src="Toyota Yaris 201603.jpg" alt="">
+           <h1 class="h1">Toyota Yaris 2016</h1>
+       </div>
+      
+
+      
+      <div class="cont">
+          
+            <h2>Criteria</h2>    
+       <p>Brand: <strong>TOYOTA</strong> </p>
+      <p>Model: <strong> Yaris</strong> </p> 
+      <p>Model Year:<strong>2016</strong> </p>
+      <p>First Registration Date: <strong>11/2016</strong></p>  
+       <p>Mileage: <strong> 125,800 km</strong></p> 
+      <p>Fuel: <strong>Gasoline</strong></p>  
+       <p>Transmission:<strong>Manual</strong></p>  
+    
+       <p>Crit'Air:<strong>1</strong></p>
+      
+      <p>Vehicle Type:<strong>Sedan</strong></p>   
+      <p>Color:<strong>White</strong></p>  
+      <p>Number of Doors:<strong>5</strong></p>  
+      <p> Number of Seats:<strong> 5</strong></p>
+      <p>Fiscal Horsepower:<strong>4 CV</strong></p>  
+      <p>DIN Horsepower:<strong> 69 CH</strong></p> 
+      <p>License:<strong>With license</strong></p> 
+     
+     </div> 
+    
+   </section>
+        
+       <h2 class="h2">Description:</h2> 
+<div class="desc">
+             
+           <br>
+      <p class="pargh">  
+            For sale, very clean Toyota Yaris 2016 phase(3) 1.0L VVT-I 4cv 69ch, with 5 seats and 5 doors. <br> 
+            It has a 5-speed manual transmission and runs on gasoline with 125,800 km. Registered in November 2016,<br>
+             model year 2017. Crit'Air 1. <br>
+
+            This vehicle features a chain distribution engine, eliminating the need for timing belt replacement. <br>
+             It comes with a complete service history and all invoices. It's a non-smoking vehicle, no pets, <br>
+              and no children; very clean <br>
+            
+            Highly economical with a consumption of 3.8L/100km, it's very practical for city driving as well as on the highway. <br>
+            
+              * Equipped with: <br>
+            
+           - Dashboard with large color touchscreen + USB + Bluetooth with hands-free kit for phone <br>
+           - Power steering <br>
+           - Air conditioning <br>
+           - ABS, ESP, traction control <br>
+           - CD+MP3+AUX radio, USB + Bluetooth + hands-free phone kit <br>
+           - Front, side, and curtain airbags, ISOFIX baby seat fixation <br>
+           - Electric front windows, tinted rear windows <br>
+           - Adjustable leather steering wheel with multifunction steering wheel controls <br>
+           - Adjustable seats, rear bench seats foldable <br>
+           - Rear fog lights <br>
+           - 2 remote central locking keys <br>
+           - 3rd brake light <br>
+           - Rear parcel shelf <br>
+           - 12V socket <br>
+           - 4 aluminum wheels (worth over €600) <br>
+           - Recent maintenance works done with all garage invoices: <br>
+            
+           - Oil change + new oil filter + new air filter + new cabin air filter <br>
+           - 4 tires in excellent condition with garage invoices <br>
+           - New brake discs + pads with garage invoices <br>
+           - New brake fluid with garage invoice <br>
+           - New coolant with invoice <br>
+           - New front and rear wiper blades <br>
+           - Technical inspection (CT) valid until 2024-2026, no expenses to foresee, excellent overall condition. <br>
+            <br>
+
+
+
+        <span> Price:</span> <span class="price"> 272 Millions</span> negotiable</p>
+
+    </div>
+
+
+   
+
+
+   
+
+
+
+</body>
+</html>

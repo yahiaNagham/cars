@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mouse+Memoirs&family=Poppins:wght@300;400;500;600&family=Questrial&family=Tilt+Warp:XROT,YROT@5,1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width:150px; 
+    height:60px;
+    border:3px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color:rgb(211, 3, 3); 
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* bh tahbt lta7t*/
+    background-image: url(7.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.container{
+    height: 420px;
+    width: 500px;
+    background: transparent;
+    color: #fff;/* ktiba kulsh bayda*/
+    box-shadow: 20px 20px 50px hwb(0 8% 23% / 0.502);/*dal t3ha*/
+    border-radius: 50px;
+    border-end-end-radius: 50px;
+    margin : 20px 0;
+    justify-content: space-between;
+   
+
+}
+input{
+     margin: 20px 0;
+     background-color: #221b1b;
+     justify-content: space-between;
+     font-size: 17px;
+     border-end-end-radius: 10px;
+     color:#fff;
+ }
+.container h1{
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+.container h4{
+    color: black;
+    font-family: sans-serif;
+}
+
+
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 1000;/*la taille t3 ktiba ta3ha*/
+    margin: 1rem 0;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+

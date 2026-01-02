@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Modus</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="styleSelling-listing.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mouse+Memoirs&family=Poppins:wght@300;400;500;600&family=Questrial&family=Tilt+Warp:XROT,YROT@5,1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    width:150px; 
+    height:60px;
+    border:3px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color:rgb(211, 3, 3); 
+    margin-left: 5px;
+}
+ul{
+  list-style:none; /*bah mtjich la lise mr9ma " Remove HTML bullets" */
+  background: rgb(223, 13, 13);
+  border-radius: 15px;
+  
+}
+ul li {
+    display: inline-block;/*bah tji godam b3dha*/
+    position: relative;
+    width:10em ;
+}
+ul li a{
+    display:block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+    padding:10px 20px;
+    color: #fff;
+    text-decoration: none;/*bah myjiwch les liens mstrin*/ 
+    text-align: center;
+    font-size: 15px;
+}
+ul li ul.menu{
+    display: block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+ul li ul.menu{
+    width: 170px;
+    background: rgb(209, 5, 5) ;
+    position: absolute;  /* bah yjiw f nafs star godam b3dhoum*/
+    z-index:999 ; /*bah tjina liste ta3 dash w para*/
+    display: none;/*bah ki ntka 3liha tjini ta3 dash w para ta7t b3dhoum psq koun n7itha tb9a kyna*/
+}
+ul li a:hover{
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+ul li:hover ul.menu{
+    display: block; /*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+.login {
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+.login:hover{
+    background: rgb(209, 5, 5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+section {
+     display: flex;/*bah nrj3 form w img godam b3dhoum*/
+ }
+.cont{ /*bah yjiw gdam b3dhoum*/
+    margin-top: 20px;
+    display: block;
+    width:360px;
+    margin-left: 120px;
+    height: 500px;
+    border: 1px solid;
+    border-radius: 50px;
+    
+
+}
+.cont p{
+  font-style: oblique;
+}
+.cont strong{
+    margin-left: 6px; 
+}
+
+div{
+    display: flex;
+    
+}
+div img {
+    width: 300PX;
+    height: 280PX;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+h2{
+    margin-left: 100px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-style: oblique;
+}
+p{
+    margin-left: 50px;
+}
+.h1{
+    position: absolute;/*ta9dr t7rkaha kima thb*/
+    top: 430px;
+    left: 68px;
+}
+
+.desc{
+    display: flex;  
+}
+.h2{
+position: absolute;
+    top: 500px;
+}
+.pargh{
+    position: absolute;
+    top: 570px;
+}
+.pargh span{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.price {
+    color: rgb(209, 5, 5);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+    <img class="logo" src="logo.jpg" >
+  
+    <ul>
+  <li> <a href="home.html"><i class="fa fa-home"></i> <span> Home</span></a></li>
+  <li> <a href="cars.html"><i class="fa fa-car"></i> Cars</a></li>
+  <li> <a href="reviews.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span> Reviews</span></a></li> 
+  <li> <a href="aboutus.html"><i class="fa fa-users" aria-hidden="true"></i><span> About Us</span></a></li>
+  <li> <a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i>  Contact Us</a></li>
+  <li><a href="sell.html"><i class="fa fa-cart-plus" aria-hidden="true"></i>  Sell</a></li>
+             
+  <li> <a href="#">Plus<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+     <ul class="menu">
+  
+            
+            <li><a href="myprofil.html"><i class="fa fa-user" aria-hidden="true"></i><span>  My profile</span></a></li>
+            <li><a href="bookmarks.html"><i class="fa fa-bookmark" aria-hidden="true"></i><span>  Bookmarks</span></a></li>
+            <li><a href="favorite.html"><i class="fa fa-heart" aria-hidden="true"></i><span>  Favorite</span></a></li>
+            <li><a href="langue.html"><i class="fa fa-language" aria-hidden="true"></i><span> Language</span></a></li>
+            <li><a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i><span> LogOut</span></a></li>
+     </ul> 
+  </li>
+  <li><a class="login" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span>  Login</span></a></li>
+  </ul>
+
+
+   <section>
+
+       <div>
+           
+         <img src="Modus1.jpg" alt="">
+         <img src="Modus2.jpg" alt="">
+         <img src="Modus3.jpg" alt="">
+           <h1 class="h1"> Modus</h1>
+       </div>
+      
+
+      
+      <div class="cont">
+          
+            <h2>Criteria</h2>    
+       <p>Brand: <strong>RENAULT</strong> </p>
+      <p>Model: <strong>Modus</strong> </p> 
+      <p>Model Year:<strong>2005</strong> </p>
+      <p>First Registration Date: <strong>06/2005</strong></p>  
+       <p>Mileage: <strong>210,000 km</strong></p> 
+      <p>Fuel: <strong>Diesel</strong></p>  
+       <p> Transmission:<strong>Manual</strong></p>  
+      <p>Upholstery:<strong>Fabric</strong></p>
+      <p>Vehicle Condition:<strong>Undamaged</strong></p>  
+      <p>Vehicle Type:<strong>Minivan</strong></p>   
+      <p>Color:<strong>Gray</strong></p>  
+      <p>Number of Doors:<strong>5</strong></p>  
+      <p> Number of Seats:<strong> 5</strong></p>
+      <p>Fiscal Power:<strong>5 HP</strong></p>  
+      <p>Engine Power:<strong> 85 HP</strong></p> 
+      <p>License:<strong>With license</strong></p> 
+     
+     </div> 
+    
+   </section>
+        
+       <h2 class="h2">Description:</h2> 
+<div class="desc">
+             
+           <br>
+      <p class="pargh">  Renault Modus 1.5L DCI 85hp
+       Clean vehicle, nothing to report. For more information, <br>
+        br contact me by phone.<br>
+        <span> Price:</span> <span class="price"> 198 milions</span> negotiable</p>
+
+    </div>
+
+
+   
+
+
+   
+
+
+
+</body>
+</html>
+
+
+
+
+   
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+  

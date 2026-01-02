@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mouse+Memoirs&family=Poppins:wght@300;400;500;600&family=Questrial&family=Tilt+Warp:XROT,YROT@5,1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    width:150px; 
+    height:60px;
+    border:3px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color:rgb(211, 3, 3); 
+    margin-left: 5px;
+}
+ul{
+  list-style:none; /*bah mtjich la lise mr9ma " Remove HTML bullets" */
+  background: rgb(223, 13, 13);
+  border-radius: 15px;
+  
+}
+ul li {
+    display: inline-block;/*bah tji godam b3dha*/
+    position: relative;
+    width:10em ;
+}
+ul li a{
+    display:block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+    padding:10px 20px;
+    color: #fff;
+    text-decoration: none;/*bah myjiwch les liens mstrin*/ 
+    text-align: center;
+    font-size: 15px;
+}
+ul li ul.menu{
+    display: block;/*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+ul li ul.menu{
+    width: 170px;
+    background: rgb(209, 5, 5) ;
+    position: absolute;  /* bah yjiw f nafs star godam b3dhoum*/
+    z-index:999 ; /*bah tjina liste ta3 dash w para*/
+    display: none;/*bah ki ntka 3la plus tjini ta3 dash w para ta7t b3dhoum psq koun n7itha tb9a kyna*/
+}
+ul li a:hover{
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+ul li:hover ul.menu{
+    display: block; /*tarj3houm ta7t b3dhoum bchakl 3moudi "hda y7trm width w height"*/
+}
+.login {
+    background: rgb(80, 73, 73);
+    border-radius: 15px;
+}
+.login:hover{
+    background: rgb(209, 5, 5);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.feed {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/*ta3 tableau ta3 form kima border*/
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+p{
+    font-size: 19px;  
+}
+.p{
+    color: rgb(196, 4, 4);
+    font-weight: 500;
+}
+.p1{
+    color: rgb(196, 4, 4);
+    font-weight: 500;
+    margin-left: 25px;
+    font-size: 20px;
+}
+form {
+    display: grid;
+    gap: 10px; /*bah ndir espace li bnthoum t7t b3dhoum*/
+}
+label {
+    font-weight: bold;
+    cursor: pointer;/*ta3 la souris*/
+}
+input[type="text"],
+input[type="email"]
+ {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="radio"]
+{
+    margin-left: 25px;
+    cursor: pointer;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+button {
+    background-color:rgb(209, 5, 5);
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color:rgb(80, 73, 73);
+}
+
+.star{
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom:5px;
+    font-size: 2.5rem;
+}
+.heading span{
+    position: relative;
+}
+.heading span::before{
+   content:'';
+   position: absolute;/*position nrml */
+   top: 0;
+   left: 0;
+   bottom: 0.5rem;
+   height:100% ;
+   width:100% ;
+   background-color: rgb(219, 6, 6);
+   clip-path: polygon(0 90%, 100% 80%, 100% 100% , 0% 100%);/*bah dir cahkl ta3 svg*/
+}
+#test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*yjiw ta7t b3dhoum*/
+    width:100%;
+}
+.container{ /*bah yjiw gdam b3dhoum*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*hdyy hya li tkhlihoum yjiw gdam b3dhoum*/
+    width:100%;
+}
+
+.box{   /*hdy bah yjiw fi border */
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);/*ta3 border li fih les messges*/
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; /*bah tji tswiraa mdwra*/
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;/*bah tji la photo f nos ta3 circle*/
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: column; /*yjiw ta7t b3dhoum*/
+}
+.namestrong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+}
+.name span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.stars{
+    color: #f9d71c;
+    font-size: 25px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+
+.comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.box:hover{
+    transform: translateY(-10px); /*ki ttka 3la messg ykabr chwia*/
+}
+button{
+    width: 100px;
+    height: 40PX;
+    background-color: rgb(80, 73, 73);    
+}
+.respond{
+    margin-top: 15px;
+font-size: 15px;
+margin-left: 330px;
+text-align: center;
+
+}
+.btn1{
+margin-top: 15px;
+font-size: 15px;
+width: 60px;
+}
+button:hover{
+    background-color: rgb(209, 5, 5);
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(80, 73, 73);    
+}
+.fin-footer{
+    display: flex;/* ndirhoum godam b3dhoum */
+    justify-content: space-around;/*bah ndie espace binthoum "nb3dhoum 3la b3dhoum  tkhli frghat bin 3nwiin"*/
+    gap: 5rem; /*ta3 espace li bin 3nawiin bl3rd*/
+}
+.fin h4{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.fin a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif ;
+    display: block;/*bah yjiw ta7t b3dhoum*/
+    padding-bottom:0.4rem; 
+    text-decoration: none;
+}
+.fin a i{
+    padding-right:0.5rem; 
+    color: #fff;
+}
+.fin a:hover i{
+    padding-right: 1.5rem;
+    color: rgb(209, 5, 5);
+
+}
+.create{
+    text-align: center;
+    color: #fff; 
+    font-size: 1rem;
+}
+.create p{
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
+    font-style: italic;
+}
+.create span{
+    color: rgb(0, 0, 0);
+    font-family: fantasy;
+    font-style: italic;
+    padding-top:1rem;
+}
